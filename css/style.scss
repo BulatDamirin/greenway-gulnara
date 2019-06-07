@@ -1,0 +1,671 @@
+body, p, h2, h4, div, h5 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #FAFAFA;
+}
+
+
+html {
+    font-size: 32px;
+
+    @media screen and (max-width: 4000px) {
+        font-size: 31.2px;
+    }
+    @media screen and (max-width: 3900px) {
+        font-size: 30.5px;
+    }
+    @media screen and (max-width: 3800px) {
+        font-size: 29.8px;
+    }
+    @media screen and (max-width: 3700px) {
+        font-size: 28.1px;
+    }
+    @media screen and (max-width: 3600px) {
+        font-size: 27.4px;
+    }
+    @media screen and (max-width: 3500px) {
+        font-size: 26.7px;
+    }
+    @media screen and (max-width: 3400px) {
+        font-size: 26px;
+    }
+    @media screen and (max-width: 3300px) {
+        font-size: 25.3px;
+    }
+    @media screen and (max-width: 3200px) {
+        font-size: 24.6px;
+    }
+    @media screen and (max-width: 3100px) {
+        font-size: 23.9px;
+    }
+    @media screen and (max-width: 3000px) {
+        font-size: 23.2px;
+    }
+    @media screen and (max-width: 2900px) {
+        font-size: 22.5px;
+    }
+    @media screen and (max-width: 2800px) {
+        font-size: 21.8px;
+    }
+    @media screen and (max-width: 2700px) {
+        font-size: 21.1px;
+    }
+    @media screen and (max-width: 2600px) {
+        font-size: 20.5px;
+    }
+    @media screen and (max-width: 2500px) {
+        font-size: 19.8px;
+    }
+    @media screen and (max-width: 2400px) {
+        font-size: 19.1px;
+    }
+    @media screen and (max-width: 2300px) {
+        font-size: 18.4px;
+    }
+    @media screen and (max-width: 2200px) {
+        font-size: 17.7px;
+    }
+    @media screen and (max-width: 2100px) {
+        font-size: 17.0px;
+    }   
+    @media screen and (max-width: 2000px) {
+        font-size: 16.3px;
+    }
+    @media screen and (max-width: 1900px) {
+        font-size: 15.6px;
+    }
+    @media screen and (max-width: 1800px) {
+        font-size: 14.9px;
+    }
+    @media screen and (max-width: 1700px) {
+        font-size: 14.1px;
+    }
+    @media screen and (max-width: 1600px) {
+        font-size: 13.4px;
+    }
+    @media screen and (max-width: 1500px) {
+        font-size: 12.7px;
+    }
+    @media screen and (max-width: 1400px) {
+        font-size: 12px;
+    }
+    @media screen and (max-width: 1300px) {
+        font-size: 11.8px;
+    }
+    @media screen and (max-width: 1200px) {
+        font-size: 11.6px;
+    }
+    @media screen and (max-width: 1100px) {
+        font-size: 11.4px;
+    }
+    @media screen and (max-width: 1000px) {
+        font-size: 11.2px;
+    }
+    @media screen and (max-width: 900px) {
+        font-size: 11px;
+    }
+    @media screen and (max-width: 700px) {
+        font-size: 10.8px;
+    }
+    @media screen and (max-width: 600px) {
+        font-size: 10.6px;
+    }
+    @media screen and (max-width: 500px) {
+        font-size: 10.4px;
+    }
+    @media screen and (max-width: 440px) {
+        font-size: 10.2px;
+    }
+    @media screen and (max-width: 380px) {
+        font-size: 10px;
+    }
+    @media screen and (max-width: 320px) {
+        font-size: 9.8px;
+    }
+}
+
+.hidden{
+    opacity:0;
+}
+
+
+// -------------------------------------------- header start -------------------------------------------- //
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media screen and (min-width: 728px) {
+        background: url(../img/eco-bg-desctop.jpg) center;
+        background-size: cover;
+    }
+
+    @media screen and (max-width: 728px) {
+        background: url(../img/eco-bg-mobile.jpg) center;
+        background-size: cover;
+    }
+}
+
+.white-board {
+    width: 40%;
+    background: rgba(246, 244, 244, 0.93);  
+    height: calc(100vh - 1rem);
+    margin-left: .5rem; 
+    transition: 2s;       
+    
+    @media screen and (max-width: 728px) {
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
+        margin-left: 0;
+    }
+}
+
+.logo {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+
+    &__svg {
+        width: 6rem;
+        height: auto;
+    }
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-top: 50%;
+    transform: translate(0, -50%);
+    
+
+    @media screen and (max-width: 728px) {
+        align-items: center;
+        margin: 0;
+        margin-top: 0;
+        transform: none;
+    } 
+
+    &__how, &__name, &__with {
+        margin: 0;
+    }
+
+    &__how {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.3rem;
+        color: #403E3E;
+        text-transform: uppercase;
+    }
+
+    &__name {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 5rem;
+        letter-spacing: 0.09em;
+        color: #56BC33;
+    }
+
+    &__with {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 728;
+        font-size: 1.4rem;
+        letter-spacing: 0.03em;
+        color: #403E3E;
+        text-transform: uppercase;
+    }
+}
+// кнопка присоединиться
+.joinbut {
+    position: absolute;
+    cursor: pointer;
+    bottom: 2rem;
+    left: 2rem;
+    background: #C4C4C4; 
+    box-shadow: 0px 0px 5px #56BC33;
+    text-align: center;
+    width: 26rem;
+    height: 5rem;
+    
+    
+    
+    @media screen and (max-width: 728px) {
+        left: calc(50% - 31rem/2);
+        border: #fff solid 2px;
+        background: transparent;
+        width: 31rem;
+        height: 6.3rem;
+
+        &__text {
+            color: #fff;
+            line-height: 6.3rem !important;
+        }
+    }
+
+    &__text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.7rem;
+        line-height: 5rem;
+        text-align: center;
+        letter-spacing: 0.09em;
+    }
+}
+
+// -------------------------------------------- header end -------------------------------------------- //
+
+
+// -------------------------------------------- familiarity start -------------------------------------------- //
+
+.container-c {
+    width: 92%;
+    display: block;
+    align-items: center;
+    margin-left: 4%;
+
+    @media screen and (max-width: 728px) {
+        width: calc(100% - 16px);
+        margin-left: 8px;
+    }
+}
+
+.familiarity {
+    margin: 17rem 0;
+    font-family: 'Roboto Condensed', sans-serif;
+
+    @media screen and (max-width: 728px) {
+        margin: 10rem 0;
+    }
+
+    &__headline {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 4rem;
+        letter-spacing: 0.09em;
+        color: #56BC33;
+
+        @media screen and (max-width: 728px) {
+            font-size: 2.9rem;
+            text-align: justify;
+        }
+    }
+
+    &__description {
+        margin: 6rem 0 2rem 0;
+
+        p {
+            @media screen and (max-width: 578px){
+                margin-bottom: 1rem;
+                text-align: justify;
+            }
+            margin-bottom: .5rem;   
+            font-style: normal;
+            font-weight: 300;
+            font-size: 1.5rem;
+            line-height: 29px;
+            letter-spacing: 0.09em;
+            color: #292727;
+        }
+    }
+
+    &__list {   
+        
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2rem;
+        letter-spacing: 0.09em;
+
+        @media screen and (max-width: 578px){
+            p {
+                margin-bottom: 2.5rem !important;
+            }
+        }
+
+        p {
+            margin-bottom: .5rem;
+        }
+
+        span {
+            color: #56BC33;
+        }
+    }
+
+    &__if {
+        margin-top: 5rem;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.8rem;
+        letter-spacing: 0.09em;
+        color: #292727;
+
+        span {
+            letter-spacing: 0.17em;
+            font-weight: normal;
+            color: #292727;
+            text-transform: uppercase;
+        }
+    }
+}
+
+// -------------------------------------------- familiarity end -------------------------------------------- //
+
+
+// -------------------------------------------- about start -------------------------------------------- //
+
+.about {
+    background: url(../img/clever.png) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 5rem 0;
+    font-family: 'Roboto Condensed', sans-serif;
+
+    &__headline {
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 6.5rem;
+        display: flex;
+        align-items: flex-end;
+        letter-spacing: 0.01em;
+        color: #292727;
+
+        @media screen and (max-width: 728px){
+            font-size: 4rem;
+        }
+    }
+
+    &__description {
+        margin-top: 1rem;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2.2rem;
+        letter-spacing: 0.01em;
+        color: #292727;
+
+        @media screen and (max-width: 728px){
+            margin-top: 2rem;
+            font-size: 1.7rem;
+        }
+    }
+
+    &__besides {
+        margin: .5rem 0 59px 0;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2.2rem;
+        letter-spacing: 0.01em;
+        color: #292727;
+        text-transform: uppercase;
+
+        @media screen and (max-width: 728px){
+            margin-top: 2rem;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.white-block {
+    display: flex;
+    justify-content: space-between;
+
+    & div:nth-child(1) {
+        margin: 0 !important;
+    }
+
+    &__white-board {
+        background: rgba(246, 244, 244, 0.93);
+        width: 100%;
+        height: 40%;
+        box-sizing: border-box;
+        position: absolute;
+        margin-top: 50%;
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        font-family: 'Roboto Condensed';
+
+        p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 2rem;
+            letter-spacing: 0.01em;
+            color: #292727
+        }
+
+        span {          
+            font-style: normal;
+            font-weight: normal;
+            font-size: 2rem;
+            letter-spacing: 0.01em;
+            color: #56BC33;
+        }
+    }
+
+    & > div {
+        width: calc((100% - 3rem)/3);
+        height: calc((100vw - 3rem)/3);
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+        position: relative;  
+        display: flex;
+        align-items: flex-end;     
+
+    }
+
+    &__team {
+        background: url(../img/team.jpg) no-repeat center;
+        background-size: cover;
+    }
+    &__eco {
+        background: url(../img/olive.jpg) no-repeat center;
+        background-size: cover;
+    }
+    &__business {
+        background: url(../img/business.jpg) no-repeat center;
+        background-size: cover;
+    }
+
+    @media screen and (max-width: 728px) {
+        flex-direction: column;
+
+        & > div {
+            width: 100%;
+            height: 100vw;
+            margin-left: 0;
+            margin-top: 15px;
+        }
+    }
+}
+
+// -------------------------------------------- about end -------------------------------------------- //
+
+// -------------------------------------------- products start -------------------------------------------- //
+
+.products {
+    margin: 17rem 0;
+    font-family: 'Roboto Condensed', sans-serif;
+
+    @media screen and (max-width: 728px) {
+        margin: 10rem 0;
+    }
+
+    &__headline {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 4rem;
+        letter-spacing: 0.09em;
+        color: #56BC33;
+
+        @media screen and (max-width: 728px) {
+            font-size: 2.9rem;
+        }
+    }
+
+    &__sentence {
+        margin-top: 10rem;
+        font-family: 'Roboto Condensed', sans-serif;
+        color: #292727;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        letter-spacing: 0.09em;
+    }
+
+    &__description {
+        margin: 6rem 0 2rem 0;
+        margin-bottom: .5rem;   
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.5rem;
+        line-height: 29px;
+        letter-spacing: 0.09em;
+        color: #292727;
+
+        @media screen and (max-width: 578px){
+            margin-bottom: 1rem;
+        }
+    }
+
+}
+
+.slider-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+// slick slider настройка
+
+.slick-arrow {
+    position: absolute;
+    background: transparent;
+    border: 0;
+    opacity: .8;
+    width: 5rem;
+    height: 5rem;;
+    outline: none;
+
+    @media screen and (max-width: 1024px) {
+        display: none !important;
+    }
+}
+
+.arrow-svg {
+    width: 50%;
+}
+
+.slick-next {
+    top: calc(50% - 2.5rem);
+    right: 0;
+    transform: translateX(87%);
+    z-index: 1;
+}
+
+.slick-prev {
+    top: calc(50% - 2.5rem);
+    left: 0;
+    transform: translateX(-87%);
+    z-index: 1;
+}
+
+.slick-dots {
+    outline: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    list-style: none;
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    transform: translateX(-50%);
+    margin-top: 1rem;
+
+    .slick-active {
+        button {
+            background: #56BC33;
+        }
+    }
+    
+    button {
+        background: #292727;
+        border-radius: 50%;
+        height: 1rem;
+        width: 1rem;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+
+        &:hover {
+            @media screen and (max-width: 1024px){ 
+                transform: none;
+            }
+            background: #56BC33; 
+            transform: scale(1.2,1.2);
+        }
+    }
+}
+
+// slick slider конец
+
+.slider {
+    margin-top: 50px;
+    width: 100%;
+
+    &__box {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 10px;
+        padding-top: 1rem;
+        height: 400px !important;
+        text-decoration: none;
+        background: #fff;
+        box-shadow: 0 0 5px #ccc;
+        color: #292727;
+        outline: none;
+
+        &:hover {
+            box-shadow: 0px 0px 5px #56BC33; 
+        }
+    }  
+    
+    &__logo {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__description {
+        text-align: center;
+        padding: 1rem;
+        height: 100px;
+    }
+
+    &__headline {
+        text-decoration: none;
+        font-family: Montserrat;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: 300;
+        letter-spacing: 0.09em;
+    }
+
+    &__text {
+        letter-spacing: 0.09em;
+        font-size: 1.1rem;
+    }
+}
+
+
+// -------------------------------------------- products end -------------------------------------------- //
