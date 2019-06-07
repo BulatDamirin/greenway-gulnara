@@ -128,6 +128,11 @@ $(document).on('DOMContentLoaded', function() {
         ]
     });
 
+    $('[data-href=".contact"]').click(function() {
+      let e = $($(this).data('href')).offset().top;
+      $('html, body').animate({scrollTop: e}, 1500);
+    });
+
     $('.slick-arrow').empty();
     $('.slick-prev').html('<img class="arrow-svg" src="img/back.svg">');
     $('.slick-next').html('<img class="arrow-svg" src="img/next.svg">');

@@ -258,14 +258,42 @@ html {
 
 @media screen and (min-width: 728px) {
   .header {
-    background: url(../img/eco-bg-desctop.jpg) center;
+    background: url(../img/eco-bg-desctop.webp) center;
     background-size: cover;
   }
 }
 
 @media screen and (max-width: 728px) {
   .header {
-    background: url(../img/eco-bg-mobile.jpg) center;
+    background: url(../img/eco-bg-mobile-728.webp) center;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    background: url(../img/eco-bg-mobile-600.webp) center;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    background: url(../img/eco-bg-mobile-500.webp) center;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    background: url(../img/eco-bg-mobile-400.webp) center;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .header {
+    background: url(../img/eco-bg-mobile-360.webp) center;
     background-size: cover;
   }
 }
@@ -275,8 +303,8 @@ html {
   background: rgba(246, 244, 244, 0.93);
   height: calc(100vh - 1rem);
   margin-left: .5rem;
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-transition: .7s;
+  transition: .7s;
 }
 
 @media screen and (max-width: 728px) {
@@ -495,7 +523,7 @@ html {
 }
 
 .about {
-  background: url(../img/clever.png) center no-repeat;
+  background: url(../img/clever.webp) center no-repeat;
   background-size: cover;
   width: 100%;
   padding: 5rem 0;
@@ -618,17 +646,17 @@ html {
 }
 
 .white-block__team {
-  background: url(../img/team.jpg) no-repeat center;
+  background: url(../img/team.webp) no-repeat center;
   background-size: cover;
 }
 
 .white-block__eco {
-  background: url(../img/olive.jpg) no-repeat center;
+  background: url(../img/olive.webp) no-repeat center;
   background-size: cover;
 }
 
 .white-block__business {
-  background: url(../img/business.jpg) no-repeat center;
+  background: url(../img/business.webp) no-repeat center;
   background-size: cover;
 }
 
@@ -715,6 +743,7 @@ html {
   width: 5rem;
   height: 5rem;
   outline: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1024px) {
@@ -725,6 +754,11 @@ html {
 
 .arrow-svg {
   width: 50%;
+}
+
+.arrow-svg:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
 }
 
 .slick-next {
@@ -860,6 +894,7 @@ html {
   letter-spacing: 0.09em;
   color: #56BC33;
   text-align: center;
+  font-family: Montserrat;
 }
 
 @media screen and (max-width: 728px) {
