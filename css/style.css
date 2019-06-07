@@ -848,4 +848,120 @@ html {
   letter-spacing: 0.09em;
   font-size: 1.1rem;
 }
+
+.contact {
+  margin: 17rem 0;
+}
+
+.contact__headline {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4rem;
+  letter-spacing: 0.09em;
+  color: #56BC33;
+  text-align: center;
+}
+
+@media screen and (max-width: 728px) {
+  .contact__headline {
+    font-size: 2.9rem;
+  }
+}
+
+.email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.email-input {
+  margin-top: 1.5rem;
+}
+
+.error-text {
+  color: #DB726C;
+  position: absolute;
+}
+
+.email-form {
+  width: 35%;
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.email-form input, .email-form button {
+  outline: none;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-family: 'Roboto Condensed';
+  color: #292727;
+}
+
+.email-form button {
+  border: none;
+  background: #EDE6E6;
+  width: 35%;
+  height: 4rem;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.email-form button:hover {
+  border: 2px solid #DFDCDC;
+}
+
+@media screen and (max-width: 1024px) {
+  .email-form button {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .email-form button {
+    width: 100%;
+  }
+}
+
+.email-form input {
+  margin-bottom: 1rem;
+  border: 2px solid #C1E18C;
+}
+
+@media screen and (max-width: 1024px) {
+  .email-form {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 728px) {
+  .email-form {
+    width: 100%;
+  }
+}
+
+.ajax-load {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: #56BC33;
+  border-radius: 20px;
+  width: 0%;
+  z-index: 2;
+}
 /*# sourceMappingURL=style.css.map */
