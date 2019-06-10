@@ -128,10 +128,25 @@ $(document).on('DOMContentLoaded', function() {
         ]
     });
 
-    $('[data-href=".contact"]').click(function() {
+    $('[data-href=".business"]').click(function() {
       let e = $($(this).data('href')).offset().top;
       $('html, body').animate({scrollTop: e}, 1500);
     });
+
+    $('.hd').click(function() {
+      let block = $(this).data('block');
+      let img = $( $(this).data('block') + ' .triangle');
+      console.log($(block).height());
+      if (img.attr('src') == 'img/sort-down.svg') {
+        $( block ).css('height', 'auto');
+        img.attr('src', 'img/sort-up.svg');
+      }
+      else {
+        $( block ).css('height', '4rem');
+        img.attr('src', 'img/sort-down.svg');
+      }
+      
+    })
 
     $('.slick-arrow').empty();
     $('.slick-prev').html('<img class="arrow-svg" src="img/back.svg">');
